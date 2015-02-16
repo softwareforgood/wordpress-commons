@@ -1,0 +1,192 @@
+// wordpress admin bar:
+#wpadminbar {
+  background: $commons-grey;
+  position: absolute;
+  height: 45px;
+  z-index: 509;
+}
+// create wrapper for admin bar links:
+#wpadminbar .quicklinks {
+  position: relative;
+  margin: 0 auto;
+}
+// Style admin bar quicklinks:
+#wpadminbar .quicklinks a {
+  height: auto;
+}
+
+// reformat main default menu:
+#wpadminbar #wp-admin-bar-root-default {
+  // float: left;
+  display: inline;
+  height: 45px;
+  z-index: 10;
+  li {
+    border-right: none;
+    &#wp-admin-bar-logo {
+      background: none;
+      padding-bottom: 0;
+      margin-right: 0px;
+    }
+    &:last-child {
+      border-right: 0;
+    }
+    &:last-child .ab-item {
+      border-right: 0;
+    }
+    &:hover a {
+      background: none;
+    }
+  }
+  a {
+    margin: 15px 0 0;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1em;
+    color: $white;
+    text-shadow: none;
+
+    &.selected {
+      color: #1ab21a;
+    }
+  }
+}
+
+// Pop up menus
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary,
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu,
+#wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input,
+#wpadminbar .ab-top-menu>li.hover>.ab-item,
+#wpadminbar .ab-top-menu>li:hover>.ab-item,
+#wpadminbar .ab-top-menu>li>.ab-item:focus,
+#wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus {
+  background: $commons-grey;
+}
+
+// Logo:
+#wpadminbar .quicklinks li#wp-admin-bar-logo {
+  a.ab-item {
+    background: url('../images/logo.jpg') top center no-repeat;
+    border-right: none;
+    height: 40px;
+    margin: 5px;
+    width: 45px;
+    padding: 0;
+    @extend .image-replacement;
+    @include background-size(contain);
+  }
+}
+
+// Search
+#wpadminbar #searchform {
+  width: 300px;
+
+  input[type=text] {
+    line-height: 14px;
+    margin: 6px 0;
+  }
+}
+
+// notifications tab:
+#wpadminbar .quicklinks li#wp-admin-bar-bp-notifications > a {
+  padding: 5px 10px;
+}
+#wpadminbar .quicklinks li#wp-admin-bar-bp-notifications #ab-pending-notifications {
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 12px;
+  color: $commons-grey;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  &.alert {
+    background: $commons-green;
+    color: #fff;
+  }
+}
+// my account tab:
+#wpadminbar .quicklinks li#wp-admin-bar-my-account > a {
+  padding: 15px 26px 15px 10px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-shadow: none;
+  color: #fff;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }
+}
+
+// search tab:
+#wpadminbar .quicklinks li#wp-admin-bar-search {
+  padding: 10px 0 10px 5px;
+  > div {
+    border-left: none;
+  }
+}
+
+
+// Style separator lines between nav items:
+#wpadminbar .quicklinks .ab-top-secondary > li {
+  border-left: 1px solid $white;
+  height: 45px;
+}
+#wpadminbar .quicklinks .ab-top-secondary > li > a {
+  border-left: none;
+}
+
+#wpadminbar .quicklinks #wp-admin-bar-my-account .ab-empty-item {
+  display: none;
+}
+
+// Reset 3.8 style changes
+#wp-admin-bar-my-account > .ab-item:before {
+  content: '';
+}
+
+#wpadminbar #adminbarsearch:before {
+  content: '';
+}
+
+#wpadminbar > #wp-toolbar > #wp-admin-bar-top-secondary > #wp-admin-bar-search #adminbarsearch input.adminbar-input {
+  padding-left: 30px;
+  height: 28px;
+  background-image: url("../images/icon-search.png");
+  background-repeat: no-repeat;
+  background-color: rgba(255,255,255,.9);
+  background-position: 4px 4px;
+  width: 165px;
+  @include transition(none);
+
+  &:focus {
+    background-color: rgba(255,255,255,1);
+    width: 165px;
+  }
+}
+
+#searchform {
+  input[type=text] {
+    border: 1px solid lighten($commons-grey, 20%);
+    font-size: 14px;
+    padding: 5px 10px;
+    width: 70%;
+  }
+
+  input[type=submit] {
+    font-size: 14px;
+    height: 28px;
+    padding: 0 5px;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,24 @@
+#bbpress-forums {
+  .bbp-author-role, p.bbp-topic-meta {
+    display: none;
+  }
+}
+
+#bbpress-forums div.bbp-forum-author img.avatar, #bbpress-forums div.bbp-topic-author img.avatar, #bbpress-forums div.bbp-reply-author img.avatar {
+  height: auto;
+}
+
+#bbpress-forums p.bbp-topic-meta img.avatar, #bbpress-forums ul.bbp-reply-revision-log img.avatar, #bbpress-forums ul.bbp-topic-revision-log img.avatar, #bbpress-forums div.bbp-template-notice img.avatar, #bbpress-forums .widget_display_topics img.avatar, #bbpress-forums .widget_display_replies img.avatar {
+  margin: 0;
+  height: auto;
+  border: none;
+}
+
+#subscription-toggle {
+  display: none;
+}
+
+.jump {
+  cursor: pointer;
+  float: right;
+}

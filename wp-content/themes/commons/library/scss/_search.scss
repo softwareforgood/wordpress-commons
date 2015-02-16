@@ -1,0 +1,40 @@
+.search.section-header{
+  h1 {
+    margin: 0;
+  }
+}
+
+.search-separator {
+  margin: 1em $gutter-width;
+  border-bottom: 1px dotted $commons-blue;
+}
+
+#main.search-results {
+  > article {
+    position: relative;
+    padding-bottom: $gutter-width;
+  }
+  h3.search-title {
+    margin: 10px 0 0;
+    font-size: 25px;
+    a {
+      color: #232323;
+    }
+  }
+  .meta-box {
+    margin: 0;
+    padding: 10px 0 10px 0;
+    background: none;
+  }
+  .entry-content {
+    p:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+
+body.search.search-results.bp-docs {
+  #buddypress {
+    padding: 0 $gutter-width $gutter-width;
+  }
+}

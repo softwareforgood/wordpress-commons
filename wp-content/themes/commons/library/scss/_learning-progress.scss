@@ -1,0 +1,157 @@
+#create {
+
+  // div {
+  //   &#acf-project_stage {
+  //     display: none;
+  //   }
+  // }
+
+  #message {
+    &.error {
+      margin-bottom: 15px;
+      @extend .alert-error;
+
+      p {
+        margin: 10px 0;
+      }
+    }
+
+    &.updated {
+      margin-bottom: 15px;
+      @extend .alert-success;
+
+      p {
+        margin: 10px 0;
+      }
+    }
+
+  }
+}
+
+#proposal {
+  h4 {
+    margin: 0;
+  }
+
+  .field {
+    margin: 1em 0 0;
+  }
+}
+
+.acf-input-prepend {
+  height: auto;
+}
+
+.acf-form .chosen-container,
+.acf-form .chosen-drop,
+.acf-form .chosen-search input {
+  min-width: 100%;
+}
+
+.acf-form .chosen-container .chosen-results li.group-result {
+  display: none;
+}
+
+.widget ul.sortButtons {
+  margin-bottom: 20px;
+
+  li {
+    margin: 0;
+
+    a {
+      color: $commons-darkgrey;
+      display: block;
+      background: none;
+      font-size: 16px;
+      padding: 5px 10px;
+      text-decoration: none;
+      span { display: none }
+      span.radio {
+        position: relative;
+        display: block;
+        float: left;
+        margin: 0 1em 0 0;
+        padding: 0;
+        width: 22px;
+        height: 22px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: none;
+        background: $white; //#EAE9E7
+        span {
+          display: none;
+        }
+      }
+    }
+    &.selected {
+      a {
+        font-weight: normal;
+        color: $commons-darkgrey;
+        opacity: 1;
+      }
+      .radio span {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0;
+        top: 5px;
+        left: 5px;
+        width: 12px;
+        height: 12px;
+        background: $commons-blue;
+        border: none;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+#acf-project_stage {
+  display: none;
+}
+
+.article-header, .section-header {
+  .alert-success {
+    margin: 0 0 30px;
+    span {
+      display: block;
+      padding: 10px 0;
+    }
+  }
+}
+
+.saveActions {
+  border-bottom: 1px solid $commons-grey;
+  display: block;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.editors {
+  strong {
+    &:after {
+      content: ',';
+    }
+
+    &:last-child {
+      &:after {
+        content: '';
+      }
+    }
+  }
+}
+
+input[type=submit]:disabled {
+  background: lighten(#76BBE4,20%);
+}
+
+.acf_postbox .field {
+  textarea {
+    &#acf-field-engagement_of_other_constituencies {
+      min-height: 50px;
+    }
+  }
+}

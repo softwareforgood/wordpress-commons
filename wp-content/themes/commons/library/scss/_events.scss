@@ -1,0 +1,91 @@
+.event {
+  .article-header {
+    h1.single-title {
+      padding-right: 100px;
+    }
+  }
+}
+
+.eventMeta {
+  p {
+    font-size: 1em;
+    strong {
+      @extend h2;
+    }
+  }
+}
+
+.editEvent {
+  float: right;
+}
+
+table.fullcalendar {
+  table-layout: fixed;
+  width: 100%;
+
+  thead {
+    td {
+      border: none;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+
+  tr {
+    &.days-names {
+      background: lighten($commons-grey, 60%);
+
+      td {
+        text-align: center;
+        vertical-align: bottom;
+      }
+    }
+  }
+
+  td {
+    text-align: right;
+    vertical-align: top;
+    width: inherit;
+
+    ul {
+      text-align: left;
+
+      a {
+        display: block;
+        margin-bottom: 10px;
+
+        &:hover {
+          color: darken(#FD7E29, 20%);
+        }
+      }
+    }
+  }
+}
+
+// Locations:
+body.single-location {
+  .entry-content {
+    > div {
+      float: none !important;
+      margin: 0 !important;
+    }
+    p strong {
+      @extend h2;
+    }
+  }
+}
+
+.event-form-name i.thinking {
+  position: relative;
+
+  &:after {
+    content: '';
+    background: url('../images/loading.gif') center center no-repeat;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: -30px;
+    top: 1px;
+    @include background-size(contain);
+  }
+}

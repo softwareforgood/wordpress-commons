@@ -1,0 +1,10 @@
+{
+  "name": "commons",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {}
+}

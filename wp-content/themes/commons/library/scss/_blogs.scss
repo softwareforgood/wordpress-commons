@@ -1,0 +1,29 @@
+.article-header {
+  h1 {
+    margin: 0;
+    &.single-title {
+      margin: 0 0 20px;
+      line-height: 1em;
+    }
+  }
+  img.wp-post-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+// Comments:
+.comments-separator {
+  margin-top: 1em;
+  border-bottom: 1px dotted $commons-blue;
+}
+.commentlist {
+  li {
+    margin-bottom: 0;
+  }
+}
+.commentlist .vcard,
+.commentlist .comment_content p {
+  @extend %font-size-small;
+}

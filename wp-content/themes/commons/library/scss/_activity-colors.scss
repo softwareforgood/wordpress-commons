@@ -1,0 +1,37 @@
+/* Colors for the activity feed based on activity type: */
+$activity-blue: #1792E8;
+$activity-green: #89D94A;
+$activity-yellow: #FEE636;
+
+.color-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: $activity-blue;
+}
+
+// Activity page:
+.activity_update, .new_blog_post {
+  .color-bar {
+    background: $activity-blue;
+  }
+}
+.created_group, .new_avatar {
+  .color-bar {
+    background: $activity-green;
+  }
+}
+.joined_group {
+  .color-bar {
+    background: $activity-yellow;
+  }
+}
+
+// Announcements page:
+.post.type-post {
+  .color-bar {
+    background: $activity-blue;
+  }
+}

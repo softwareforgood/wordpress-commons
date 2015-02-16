@@ -1,0 +1,2 @@
+/*! buddypress - v2.2.0 - 2015-02-04 11:24:24 PM UTC - https://wordpress.org/plugins/buddypress/ */
+jQuery(document).ready(function(){jQuery("a.confirm").click(function(){return confirm(BP_Confirm.are_you_sure)?!0:!1})});

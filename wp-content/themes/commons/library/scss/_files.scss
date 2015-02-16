@@ -1,0 +1,64 @@
+#doc-tax,
+#doc-parent {
+  display: none;
+}
+
+body .row-actions {
+  a {
+    color: $link-color;
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+.bp-docs.single {
+  .comment-reply-title,
+  .logged-in-as,
+  .comment-form-comment label,
+  .form-allowed-tags {
+    display: none;
+  }
+  .comment-form-comment {
+    textarea#comment {
+      width: 100%;
+      background: #FAFAFA;
+      border: 2px solid #D3D3D3;
+    }
+  }
+  .form-submit {
+    text-align: right;
+    #submit {
+      @extend .blue-button.btn-large;
+    }
+  }
+}
+
+#buddypress {
+  .hide-pane, .show-pane, .paperclip-vertical, .paperclip-jaunty {
+    margin-top: 2px;
+  }
+}
+
+.groups-cell ul li img.avatar {
+  display: block;
+}
+
+table.doctable {
+  table-layout: fixed;
+  width: 100%;
+
+  td, th {
+    text-align: left;
+  }
+  .tags-cell,
+  .created-date-cell {
+    display: none;
+  }
+  *[class$="-cell"] {
+    width: auto;
+  }
+  .attachment-clip-cell {
+    width: 35px;
+  }
+}

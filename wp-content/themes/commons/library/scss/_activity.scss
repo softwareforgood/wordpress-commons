@@ -1,0 +1,45 @@
+#buddypress {
+  #activity-stream {
+    li.activity-item {
+      padding-left: $gutter-width;
+      padding-right: $gutter-width;
+    }
+  }
+  #activity-stream.activity-list {
+    .activity-content {
+      .activity-header p {
+        @extend .byline;
+        line-height: 1.5em;
+      }
+    }
+  }
+  div.activity-meta a,
+  a.button.delete-activity {
+    padding: 0;
+    background: none;
+    color: $link-color;
+    text-decoration: underline;
+    &:hover {
+      color: $link-hover;
+      background: none;
+      text-decoration: underline;
+    }
+  }
+
+  div.activity-comments {
+    > form {
+      float: left;
+      width: 100%;
+    }
+    div.acomment-meta {
+      @extend .byline;
+    }
+  }
+
+  // for polls in activity stream:
+  #activity-stream {
+    .wp-polls input {
+      margin-left: 2px;
+    }
+  }
+}

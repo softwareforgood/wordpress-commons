@@ -1,0 +1,176 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+  max-width: 1140px;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+  .bar {
+    background: $commons-black;
+  }
+  #inner-header {
+    a.logo {
+      display: block;
+      float: left;
+      padding: 1.5em 4em 1em 1em;
+      width: 20%;
+    }
+
+    nav {
+      float: left;
+      margin-top: -80px;
+      width: 80%;
+    }
+  }
+}
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav {
+  background: $commons-black;
+  border: 0;
+  height: 80px;
+  padding: 0 2em;
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    display: inline;
+    position: relative;
+
+    a {
+      border-bottom: 0;
+      color: #a2a2a2;
+      display: inline-block;
+      font-size: .75em;
+      padding: 1.5em .75em;
+      text-transform: uppercase;
+
+      /*
+      you can use hover styles here even though this size
+      has the possibility of being a mobile device.
+      */
+      &:hover, &:focus {
+        background-color: #dedede;
+
+      }
+    }
+
+    &:after {
+      content: '|';
+    }
+
+    &:first-child {}
+    &:last-child {
+      &:after {
+        content: '';
+      }
+    }
+
+    /*
+    plan your menus and drop-downs wisely.
+    */
+    ul.sub-menu,
+    ul.children {
+      margin-top: 0;
+      border: 1px solid #ccc;
+      border-top: 0;
+      position: absolute;
+      display: none;
+      z-index: 8999;
+
+      li {
+
+        a {
+          padding-left: 10px;
+          border-right: 0;
+          display: block;
+          width: 180px;
+          border-bottom: 1px solid #ccc;
+
+          &:hover,
+          &:focus {}
+
+          &:link {}
+        }
+
+        &:first-child {}
+
+        &:last-child {
+
+          a {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+
+    /* showing sub-menus */
+    &:hover ul {
+      top: auto;
+      display: block;
+    }
+
+  } /* end .menu ul li */
+
+} /* end .nav */
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {
+  margin-top: 0;
+}
+.widget {
+  padding: 0;
+  margin: 0 0 2.2em 0;
+
+  ul {
+    li {
+      margin-bottom: 0.75em;
+
+      &:first-child {}
+      &:last-child {}
+      a {}
+    }
+  }
+}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+

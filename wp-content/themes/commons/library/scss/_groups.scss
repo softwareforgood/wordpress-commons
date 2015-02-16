@@ -1,0 +1,195 @@
+#groups-list {
+  li {
+    background: $white;
+    @extend .fourcol;
+  }
+}
+
+// For index-directory.php:
+.add-new-bar {
+  margin-bottom: 1em;
+  a {
+    float: right;
+  }
+  body.my-groups & {
+    display: none;
+  }
+}
+
+.card-container {
+  margin-left: -1%;
+  .card {
+    position: relative;
+    float: left;
+    margin: 0 0 1% 1%;
+    width: 32.333333333%;
+    background: $white;
+    border: 1px solid #BDBEBF;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 2%;
+      width: 49%;
+    }
+    @media screen and (max-width: 500px) {
+      margin: 0 0 2% 0;
+      width: 100%;
+    }
+    .card-title {
+      padding: 0 3% 3%;
+      height: 91px;
+      @extend h2;
+    }
+    .card-meta-box {
+      position: relative;
+      margin-bottom: 3%;
+      padding: 3% 3% 3%;
+      left: 0;
+      height: 70px;
+      background: #F2F2F2;
+      font-size: 1em;
+      text-transform: uppercase;
+      color: $commons-darkgrey;
+      span {
+        margin: 0 1em;
+        &.first {
+          margin-left: 0;
+        }
+      }
+      .card-activity {
+
+      }
+    }
+    &.button-container {
+      float: right;
+      border: none;
+      background: none;
+    }
+    &.sort-options {
+      padding: 0;
+      border: none;
+      background: none;
+      //margin-top: 20px;
+      .widgettitle {
+        margin-top: 0;
+      }
+      .item-list-tabs {
+        margin-top: 1em;
+      }
+      #buddypress & li {
+        float: none;
+        a {
+          color: $commons-darkgrey;
+          background: none;
+          font-size: 16px;
+          span { display: none }
+          span.radio {
+            position: relative;
+            display: block;
+            float: left;
+            margin: 0 1em 0 0;
+            padding: 0;
+            width: 22px;
+            height: 22px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            border: none;
+            background: $white; //#EAE9E7
+            span {
+              display: none;
+            }
+          }
+        }
+        &.selected {
+          a {
+            font-weight: normal;
+            color: $commons-darkgrey;
+            opacity: 1;
+          }
+          .radio span {
+            position: relative;
+            display: block;
+            margin: 0;
+            padding: 0;
+            top: 5px;
+            left: 5px;
+            width: 12px;
+            height: 12px;
+            background: $commons-blue;
+            border: none;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// For single group details:
+#buddypress {
+
+  .group-description {
+    p {
+      @extend %font-size-small;
+    }
+  }
+}
+
+.group-title-meta {
+  h2 {
+    display: inline-block;
+    width: 70%;
+  }
+
+  .group-meta {
+    color: lighten($commons-darkgrey, 50%);
+    text-transform: uppercase;
+
+    span {
+      border-right: 1px solid lighten($commons-darkgrey, 50%);
+      padding: 0 5px 0 0;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  #buddypress div#item-header & div.generic-button {
+    display: inline-block;
+    float: right;
+    margin: 0 0 0 10px;
+  }
+}
+
+// Send Invites
+#send-invite-form {
+  float: left;
+  width: 100%;
+  .left-menu {
+    float: left;
+    width: 35%;
+    input#send-to-input {
+      width: 100%;
+    }
+    #invite-anyone-member-list {
+      width: auto;
+    }
+  }
+  .main-column {
+    margin-left: 5% !important;
+    float: left;
+    width: 60%;
+  }
+  div.submit {
+    float: left;
+    width: 100%;
+  }
+}
+
+// Create group
+#group-create-body .left-menu img.avatar {
+  width: 180px;
+  height: auto;
+}

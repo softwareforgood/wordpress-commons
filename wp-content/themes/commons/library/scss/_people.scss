@@ -1,0 +1,196 @@
+#buddypress {
+  div#item-header {
+    h2.user-nicename {
+      margin-bottom: 10px;
+    }
+    .phone {
+      color: #777;
+      font-size: 1.1em;
+    }
+    div#item-meta {
+      margin: 0.5em 0 0.3em;
+      padding: 0;
+      div#item-buttons {
+        float: left;
+        width: 100%;
+        margin: 0 0 15px;
+        .generic-button {
+          margin-top: 0;
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+      .socialLinks {
+        float: left;
+        width: 100%;
+        margin: 0 0 15px;
+        span {
+          a {
+            margin: 0 0.3em 0 0;
+            display: inline-block;
+            width: 21px;
+            height: 21px;
+            float: left;
+          }
+        }
+        .facebook a {
+          background: url("../images/icon-facebook.png") no-repeat;
+        }
+        .twitter a {
+          background: url("../images/icon-twitter.png") no-repeat;
+        }
+        .linkedin a {
+          background: url("../images/icon-linkedin.png") no-repeat;
+        }
+      }
+    }
+  }
+}
+
+// Profile
+.field_business-address td {
+  white-space: pre-wrap;
+}
+
+// Sidebar Widgets:
+.org-info {
+  .org-title {
+    font-size: 1.3em;
+    line-height: 1.35em;
+    color: $commons-darkgrey;
+  }
+  .address {
+    @extend .whitespace;
+    color: $commons-darkgrey;
+  }
+}
+.widget.expertise {
+  ul li {
+    margin: 0;
+  }
+}
+
+.view-blog-entries {
+  font-size: 0.75em;
+}
+
+// Invite People Page:
+#buddypress {
+  #invite-anyone-steps textarea {
+    width: 100%;
+  }
+  #invite-anyone-group-list li {
+    margin: 5px 2% 10px 2%;
+    width: 46%;
+    min-width: 200px;
+    height: 30px;
+    min-height: 30px;
+    input {
+      margin: 10px 1%;
+      width: 10%;
+    }
+    label {
+      margin-top: 8px;
+      width: 88%;
+      img {
+        margin-right: 5%;
+        width: auto;
+        height: auto;
+        max-width: 20%;
+        max-height: 30px;
+      }
+      span {
+        display: block;
+        float: left;
+        width: 75%;
+        line-height: 1.35em;
+      }
+    }
+  }
+  #subnav #invite-new-members {
+    margin-left: 10px;
+  }
+  // Sent invites:
+  .invite-anyone-sent-invites {
+    td {
+      padding: 8px;
+      &.date-joined {
+        padding-left: 25px;
+      }
+    }
+  }
+}
+
+// Activity:
+body.activity-permalink {
+  #buddypress {
+    div.activity-meta {
+      margin-bottom: 0;
+    }
+    ul.activity-list {
+      li {
+        .activity-avatar,
+        .activity-avatar img.avatar {
+          float: none;
+        }
+        .activity-avatar {
+          a {
+            display: block;
+          }
+        }
+        .activity-content {
+          margin: 0;
+        }
+        .activity-comments {
+          margin-left: 0;
+          > ul {
+            padding: 0;
+          }
+          ul {
+            float: left;
+            width: 100%;
+            li {
+              padding-bottom: 10px;
+            }
+          }
+        }
+        &.has-comments {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+// Events:
+#em-location-data table.em-location-data select {
+  width: 170px;
+}
+.css-locations-admin .em-button.button.add-new-h2 {
+  margin: 0;
+}
+
+// Miscellaneous:
+.subsubsub {
+  margin: 0 0 1em;
+}
+.tablenav {
+  float: left;
+  margin: 1em 0;
+}
+table.widefat {
+  margin: 1em 0 0;
+  table-layout: auto;
+  width: 100%;
+}
+
+// Groups:
+body.bp-user.my-groups .card.sort-options {
+  display: none;
+}
+
+// Mass Messaging:
+#send_message_form input[type="checkbox"] {
+  margin-right: 5px;
+}
