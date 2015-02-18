@@ -1,7 +1,9 @@
 # Opensource Commons
 ----
 
-The Opensource Commons is a project built by [Software for Good](http://www.softwareforgood.com) which helps organizations move their communication online. Built using [Wordpress](http://www.wordpress.org) and [Buddypress](http://www.buddypress.org) (plus many more plugins) the Commons is relatively simple to setup with some familiarity with those tools.
+The Opensource Commons is a project originally built by [RE-AMP](http://www.reamp.org/) and [Software for Good](http://www.softwareforgood.com) which aims to help organizations move their communication online and collaborate digitally.
+
+Built using [Wordpress](http://www.wordpress.org) and [Buddypress](http://www.buddypress.org) (plus many more plugins) the Commons is relatively simple to setup with some familiarity with those tools.
 
 ## Installation & Setup
 This project assumes some familiarity with setting up a [Wordpress site](https://codex.wordpress.org/Installing_WordPress). 
