@@ -131,4 +131,21 @@ add_filter('bp_ajax_querystring','modify_members_list');
 // Disable commenting on activity stream
 add_filter( 'bp_activity_can_comment', '__return_false' );
 
+// Exit if accessed directly
+if ( !defined( 'ABSPATH' ) ) exit;
+function test_retain_register_activate_signup_not_allowed( $page_ids = array() ) {
+if ( ! version_compare( buddypress()->version, '2.2', '=' ) ) {
+return $page_ids;
+}
+$all_page_ids = bp_get_option( 'bp-pages' );
+if ( ! isset( $page_ids['register'] ) && ! empty( $all_page_ids['register'] ) ) {
+$page_ids['register'] = $all_page_ids['register'];
+}
+if ( ! isset( $page_ids['activate'] ) && ! empty( $all_page_ids['activate'] ) ) {
+$page_ids['activate'] = $all_page_ids['activate'];
+}
+return $page_ids;
+}
+add_filter( 'bp_core_get_directory_page_ids', 'test_retain_register_activate_signup_not_allowed', 10, 1 );
+
 ?>
