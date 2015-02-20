@@ -21,12 +21,8 @@ The only code checked into the repository in the `wp-content` directory containi
 * `wp core download`
 * `wp core config --dbname=<yourdatabasename> --dbuser=<yourdatabaseuser>`
 * `wp user create <login> <email> --role=administrator`
-* Navigate to your URL and familiarize yourself with your new community!
+* Visit [http://opensource-commons.dev](http://opensource-commons.dev) and sign in. You should be all setup! You can access the dashboard at [http://opensource-commons.dev/wp-admin](http://opensource-commons.dev/wp-admin). Note that you will want to update the admin URL under "General Settings"
 
-
-## Updating
-
-## Contributing
 
 ## License
-GPLv2
+This project is released free for use under [GPLv2.0](wordpress-commons/gnu-gpl-v2.0.md). 
