@@ -4,6 +4,7 @@
 .cvs
 *.bak
 *.swp
+*.map
 Thumbs.db
 
 # wordpress specific
