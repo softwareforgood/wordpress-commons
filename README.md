@@ -11,14 +11,17 @@ This project assumes some familiarity with setting up a [Wordpress site](https:/
 The only code checked into the repository in the `wp-content` directory containing plugins and themes and a default database with some basic plugin configuration and pages to get up and running quickly. I also highly recommend using [wp-cli](http://wp-cli.org/) to make your wordpress life a little easier. 
 
 ###To get running locally
-* Copy this project
-* Create your database
-* Import the starter database
 * create your new project directory and `cd` into it
-* (with wp-cli) run `wp core download`
-* (with wp-cli)
+* clone this project
+* Create your database
+* Import the starter database. By default, the URL is [http://opensource-commons.dev](http://opensource-commons.dev)
 
-...
+####With WP-CLI (see docs for more parameters)
+
+* `wp core download`
+* `wp core config --dbname=<yourdatabasename> --dbuser=<yourdatabaseuser>`
+* `wp user create <login> <email> --role=administrator`
+* Navigate to your URL and familiarize yourself with your new community!
 
 
 ## Updating

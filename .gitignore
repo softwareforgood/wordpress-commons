@@ -8,7 +8,10 @@ Thumbs.db
 
 # wordpress specific
 wp-config.php
-wp-content/uploads/
+wp-content/uploads/*
+!wp-content/uploads/bp-attachments/
+wp-content/uploads/bp-attachments/*
+!wp-content/uploads/bp-attachments/0/
 wp-content/blogs.dir/
 wp-content/upgrade/*
 wp-content/backup-db/*
@@ -59,6 +62,8 @@ wp-content/mysql.sql
 /wp-includes
 /wp-content/index.php
 /wp-content/themes/twentyten
+/wp-content/themes/twentythirteen
+/wp-content/themes/twentyfourteen
 /wp-content/themes/index.php
 /wp-content/plugins/index.php
 
