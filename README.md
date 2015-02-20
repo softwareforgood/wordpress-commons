@@ -22,7 +22,7 @@ The only code checked into the repository in the `wp-content` directory containi
 * `wp core config --dbname=<yourdatabasename> --dbuser=<yourdatabaseuser>`
 * `wp user create <login> <email> --role=administrator`
 
-######Old Fashioned Way
+#####Old Fashioned Way
 * Download the [Wordpress zip](https://wordpress.org/download/) and unpack it
 * Copy everything but the `wp-content` directory into your project
 * Visit [http://opensource-commons.dev](http://opensource-commons.dev) and follow the famous 5-minute install. Note that you may need to manually create your `wp-config.php` from the generated content.
