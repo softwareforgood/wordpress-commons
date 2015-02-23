@@ -84,7 +84,26 @@
 
   input[type=text] {
     line-height: 14px;
-    margin: 6px 0;
+    margin: 9px 0;
+  }
+}
+
+#searchform {
+  input[type=text] {
+    border: 1px solid lighten($commons-grey, 20%);
+    font-size: 14px;
+    padding: 5px 30px 5px 10px;
+    width: 255px;
+    width: calc(100% - 45px);
+  }
+
+  input[type=submit] {
+    background: transparent url('../images/icon-search.png') center center no-repeat;
+    font-size: 0px;
+    height: 22px;
+    margin: 0 0 0 -24px;
+    width: 16px;
+    @include background-size(contain);
   }
 }
 
@@ -172,21 +191,5 @@
   &:focus {
     background-color: rgba(255,255,255,1);
     width: 165px;
-  }
-}
-
-#searchform {
-  input[type=text] {
-    border: 1px solid lighten($commons-grey, 20%);
-    font-size: 14px;
-    padding: 5px 10px;
-    width: 70%;
-  }
-
-  input[type=submit] {
-    font-size: 14px;
-    height: 28px;
-    padding: 0 5px;
-    vertical-align: middle;
   }
 }
