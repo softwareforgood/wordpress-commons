@@ -992,7 +992,7 @@ function bbp_check_for_blacklist( $anonymous_data = false, $author_id = 0, $titl
  * that limit the number of addresses in a BCC field (often to around 500.) In
  * those cases, we recommend unhooking this function and creating your own
  * custom emailer script.
- *
+ * 
  * @since bbPress (r2668)
  *
  * @param int $reply_id ID of the newly made reply
@@ -1100,7 +1100,7 @@ Login and visit the topic to unsubscribe from these emails.', 'bbpress' ),
 
 	// Setup the From header
 	$headers[] = 'From: ' . get_bloginfo( 'name' ) . ' ' . $do_not_reply;
-
+	
 	// Get topic subscribers and bail if empty
 	$user_ids = bbp_get_topic_subscribers( $topic_id, true );
 	if ( empty( $user_ids ) ) {
@@ -1145,7 +1145,7 @@ Login and visit the topic to unsubscribe from these emails.', 'bbpress' ),
  * that limit the number of addresses in a BCC field (often to around 500.) In
  * those cases, we recommend unhooking this function and creating your own
  * custom emailer script.
- *
+ * 
  * @since bbPress (r5156)
  *
  * @param int $topic_id ID of the newly made reply
@@ -1179,8 +1179,6 @@ function bbp_notify_forum_subscribers( $topic_id = 0, $forum_id = 0, $anonymous_
 
 	$topic_id = bbp_get_topic_id( $topic_id );
 	$forum_id = bbp_get_forum_id( $forum_id );
-
-  $user_id  = 0;
 
 	/** Topic *****************************************************************/
 
@@ -1242,7 +1240,7 @@ Login and visit the topic to unsubscribe from these emails.', 'bbpress' ),
 
 	// Setup the From header
 	$headers[] = 'From: ' . get_bloginfo( 'name' ) . ' ' . $do_not_reply;
-
+	
 	// Get topic subscribers and bail if empty
 	$user_ids = bbp_get_forum_subscribers( $forum_id, true );
 	if ( empty( $user_ids ) ) {

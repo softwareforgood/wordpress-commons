@@ -2,9 +2,9 @@
 # This file is distributed under the GPLv2 or later (license.txt).
 msgid ""
 msgstr ""
-"Project-Id-Version: BuddyPress 2.2.0\n"
+"Project-Id-Version: BuddyPress 2.2.1\n"
 "Report-Msgid-Bugs-To: https://buddypress.trac.wordpress.org\n"
-"POT-Creation-Date: 2015-02-04 23:24:26+00:00\n"
+"POT-Creation-Date: 2015-02-17 23:13:57+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,7 +26,7 @@ msgid "The activity item has been marked as spam and is no longer visible."
 msgstr ""
 
 #: bp-activity/bp-activity-actions.php:333
-#: bp-templates/bp-legacy/buddypress-functions.php:808
+#: bp-templates/bp-legacy/buddypress-functions.php:817
 msgid "Please enter some content to post."
 msgstr ""
 
@@ -39,7 +39,7 @@ msgid "There was an error when posting your update. Please try again."
 msgstr ""
 
 #: bp-activity/bp-activity-actions.php:417
-#: bp-templates/bp-legacy/buddypress-functions.php:875
+#: bp-templates/bp-legacy/buddypress-functions.php:884
 msgid "Please do not leave the comment area blank."
 msgstr ""
 
@@ -595,7 +595,7 @@ msgid "%s posted a new activity comment"
 msgstr ""
 
 #: bp-activity/bp-activity-functions.php:2080
-#: bp-templates/bp-legacy/buddypress-functions.php:872
+#: bp-templates/bp-legacy/buddypress-functions.php:881
 msgid "There was an error posting your reply. Please try again."
 msgstr ""
 
@@ -794,8 +794,8 @@ msgstr ""
 #: bp-members/admin/bp-members-classes.php:507
 #: bp-members/admin/bp-members-classes.php:633
 #: bp-messages/bp-messages-template.php:1286
-#: bp-notifications/bp-notifications-template.php:1014
-#: bp-notifications/bp-notifications-template.php:1242
+#: bp-notifications/bp-notifications-template.php:1010
+#: bp-notifications/bp-notifications-template.php:1238
 #: bp-templates/bp-legacy/buddypress/activity/comment.php:43
 #: bp-templates/bp-legacy/buddypress/members/single/messages/messages-loop.php:73
 #: bp-templates/bp-legacy/buddypress/members/single/messages/single.php:28
@@ -2714,7 +2714,7 @@ msgid "You already have a pending friendship request with this user"
 msgstr ""
 
 #: bp-friends/bp-friends-actions.php:76
-#: bp-templates/bp-legacy/buddypress-functions.php:1210
+#: bp-templates/bp-legacy/buddypress-functions.php:1219
 msgid "Friendship could not be canceled."
 msgstr ""
 
@@ -2862,7 +2862,7 @@ msgid "%d friends"
 msgstr ""
 
 #: bp-friends/bp-friends-template.php:355
-#: bp-templates/bp-legacy/buddypress-functions.php:1222
+#: bp-templates/bp-legacy/buddypress-functions.php:1231
 msgid "Cancel Friendship Request"
 msgstr ""
 
@@ -2882,8 +2882,8 @@ msgstr ""
 
 #: bp-friends/bp-friends-template.php:406
 #: bp-friends/bp-friends-template.php:407
-#: bp-templates/bp-legacy/buddypress-functions.php:1212
-#: bp-templates/bp-legacy/buddypress-functions.php:1230
+#: bp-templates/bp-legacy/buddypress-functions.php:1221
+#: bp-templates/bp-legacy/buddypress-functions.php:1239
 msgid "Add Friend"
 msgstr ""
 
@@ -3926,13 +3926,13 @@ msgid ""
 msgstr ""
 
 #: bp-groups/bp-groups-template.php:2755 bp-groups/bp-groups-template.php:2756
-#: bp-templates/bp-legacy/buddypress-functions.php:1308
-#: bp-templates/bp-legacy/buddypress-functions.php:1321
+#: bp-templates/bp-legacy/buddypress-functions.php:1317
+#: bp-templates/bp-legacy/buddypress-functions.php:1330
 msgid "Leave Group"
 msgstr ""
 
 #: bp-groups/bp-groups-template.php:2778 bp-groups/bp-groups-template.php:2779
-#: bp-templates/bp-legacy/buddypress-functions.php:1342
+#: bp-templates/bp-legacy/buddypress-functions.php:1351
 msgid "Join Group"
 msgstr ""
 
@@ -3945,7 +3945,7 @@ msgid "Request Sent"
 msgstr ""
 
 #: bp-groups/bp-groups-template.php:2829 bp-groups/bp-groups-template.php:2830
-#: bp-templates/bp-legacy/buddypress-functions.php:1344
+#: bp-templates/bp-legacy/buddypress-functions.php:1353
 msgid "Request Membership"
 msgstr ""
 
@@ -3978,7 +3978,7 @@ msgid "This is a hidden group and only invited members can join."
 msgstr ""
 
 #: bp-groups/bp-groups-template.php:3504
-#: bp-notifications/bp-notifications-template.php:1211
+#: bp-notifications/bp-notifications-template.php:1207
 #: bp-templates/bp-legacy/buddypress/blogs/index.php:36
 #: bp-templates/bp-legacy/buddypress/forums/index.php:42
 #: bp-templates/bp-legacy/buddypress/groups/index.php:36
@@ -4679,7 +4679,7 @@ msgstr ""
 
 #: bp-messages/bp-messages-actions.php:225
 #: bp-messages/bp-messages-actions.php:271
-#: bp-templates/bp-legacy/buddypress-functions.php:1502
+#: bp-templates/bp-legacy/buddypress-functions.php:1511
 msgid "Messages deleted."
 msgstr ""
 
@@ -4874,27 +4874,27 @@ msgid "Delete Selected"
 msgstr ""
 
 #: bp-messages/bp-messages-template.php:1281
-#: bp-notifications/bp-notifications-template.php:1233
+#: bp-notifications/bp-notifications-template.php:1229
 msgid "Select Bulk Action"
 msgstr ""
 
 #: bp-messages/bp-messages-template.php:1283
-#: bp-notifications/bp-notifications-template.php:1235
+#: bp-notifications/bp-notifications-template.php:1231
 msgid "Bulk Actions"
 msgstr ""
 
 #: bp-messages/bp-messages-template.php:1284
-#: bp-notifications/bp-notifications-template.php:1238
+#: bp-notifications/bp-notifications-template.php:1234
 msgid "Mark read"
 msgstr ""
 
 #: bp-messages/bp-messages-template.php:1285
-#: bp-notifications/bp-notifications-template.php:1240
+#: bp-notifications/bp-notifications-template.php:1236
 msgid "Mark unread"
 msgstr ""
 
 #: bp-messages/bp-messages-template.php:1288
-#: bp-notifications/bp-notifications-template.php:1244
+#: bp-notifications/bp-notifications-template.php:1240
 msgid "Apply"
 msgstr ""
 
@@ -4927,7 +4927,7 @@ msgid "%s recipients"
 msgstr ""
 
 #: bp-messages/bp-messages-template.php:2399
-#: bp-templates/bp-legacy/buddypress-functions.php:1411
+#: bp-templates/bp-legacy/buddypress-functions.php:1420
 msgid "Sent %s"
 msgstr ""
 
@@ -4984,30 +4984,30 @@ msgstr ""
 msgid "Search Notifications..."
 msgstr ""
 
-#: bp-notifications/bp-notifications-template.php:747
+#: bp-notifications/bp-notifications-template.php:743
 msgid "Date not found"
 msgstr ""
 
-#: bp-notifications/bp-notifications-template.php:825
+#: bp-notifications/bp-notifications-template.php:821
 #: bp-templates/bp-legacy/buddypress/members/single/messages/messages-loop.php:68
 msgid "Read"
 msgstr ""
 
-#: bp-notifications/bp-notifications-template.php:1151
+#: bp-notifications/bp-notifications-template.php:1147
 msgid "Viewing 1 notification"
 msgid_plural "Viewing %1$s - %2$s of %3$s notifications"
 msgstr[0] ""
 msgstr[1] ""
 
-#: bp-notifications/bp-notifications-template.php:1214
+#: bp-notifications/bp-notifications-template.php:1210
 msgid "Newest First"
 msgstr ""
 
-#: bp-notifications/bp-notifications-template.php:1215
+#: bp-notifications/bp-notifications-template.php:1211
 msgid "Oldest First"
 msgstr ""
 
-#: bp-notifications/bp-notifications-template.php:1219
+#: bp-notifications/bp-notifications-template.php:1215
 msgid "Go"
 msgstr ""
 
@@ -5144,15 +5144,15 @@ msgstr ""
 
 #: bp-templates/bp-legacy/buddypress/activity/entry.php:66
 #: bp-templates/bp-legacy/buddypress-functions.php:246
-#: bp-templates/bp-legacy/buddypress-functions.php:1055
-#: bp-templates/bp-legacy/buddypress-functions.php:1072
+#: bp-templates/bp-legacy/buddypress-functions.php:1064
+#: bp-templates/bp-legacy/buddypress-functions.php:1081
 msgid "Favorite"
 msgstr ""
 
 #: bp-templates/bp-legacy/buddypress/activity/entry.php:70
 #: bp-templates/bp-legacy/buddypress-functions.php:249
-#: bp-templates/bp-legacy/buddypress-functions.php:1053
-#: bp-templates/bp-legacy/buddypress-functions.php:1074
+#: bp-templates/bp-legacy/buddypress-functions.php:1062
+#: bp-templates/bp-legacy/buddypress-functions.php:1083
 msgid "Remove Favorite"
 msgstr ""
 
@@ -5484,7 +5484,7 @@ msgstr ""
 
 #: bp-templates/bp-legacy/buddypress/groups/create.php:225
 #: bp-templates/bp-legacy/buddypress/groups/single/invites-loop.php:52
-#: bp-templates/bp-legacy/buddypress-functions.php:1161
+#: bp-templates/bp-legacy/buddypress-functions.php:1170
 msgid "Remove Invite"
 msgstr ""
 
@@ -6119,75 +6119,75 @@ msgid ""
 "be lost."
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:823
+#: bp-templates/bp-legacy/buddypress-functions.php:832
 msgid "There was a problem posting your update. Please try again."
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:955
-#: bp-templates/bp-legacy/buddypress-functions.php:991
+#: bp-templates/bp-legacy/buddypress-functions.php:964
+#: bp-templates/bp-legacy/buddypress-functions.php:1000
 msgid "There was a problem when deleting. Please try again."
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1165
+#: bp-templates/bp-legacy/buddypress-functions.php:1174
 msgid ""
 "%s has previously requested to join this group. Sending an invitation will "
 "automatically add the member to the group."
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1220
+#: bp-templates/bp-legacy/buddypress-functions.php:1229
 msgid " Friendship could not be requested."
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1232
+#: bp-templates/bp-legacy/buddypress-functions.php:1241
 msgid "Friendship request could not be cancelled."
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1237
+#: bp-templates/bp-legacy/buddypress-functions.php:1246
 msgid "Request Pending"
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1257
+#: bp-templates/bp-legacy/buddypress-functions.php:1266
 msgid "There was a problem accepting that request. Please try again."
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1276
+#: bp-templates/bp-legacy/buddypress-functions.php:1285
 msgid "There was a problem rejecting that request. Please try again."
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1306
+#: bp-templates/bp-legacy/buddypress-functions.php:1315
 msgid "Error joining group"
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1319
-#: bp-templates/bp-legacy/buddypress-functions.php:1329
+#: bp-templates/bp-legacy/buddypress-functions.php:1328
+#: bp-templates/bp-legacy/buddypress-functions.php:1338
 msgid "Error requesting membership"
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1331
+#: bp-templates/bp-legacy/buddypress-functions.php:1340
 msgid "Membership Requested"
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1340
+#: bp-templates/bp-legacy/buddypress-functions.php:1349
 msgid "Error leaving group"
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1363
+#: bp-templates/bp-legacy/buddypress-functions.php:1372
 msgid "There was a problem closing the notice."
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1428
+#: bp-templates/bp-legacy/buddypress-functions.php:1437
 msgid "There was a problem sending that reply. Please try again."
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1446
+#: bp-templates/bp-legacy/buddypress-functions.php:1455
 msgid "There was a problem marking messages as unread."
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1471
+#: bp-templates/bp-legacy/buddypress-functions.php:1480
 msgid "There was a problem marking messages as read."
 msgstr ""
 
-#: bp-templates/bp-legacy/buddypress-functions.php:1496
+#: bp-templates/bp-legacy/buddypress-functions.php:1505
 msgid "There was a problem deleting messages."
 msgstr ""
 
@@ -7368,7 +7368,7 @@ msgctxt "Notifications pagination next text"
 msgid "&rarr;"
 msgstr ""
 
-#: bp-notifications/bp-notifications-template.php:903
+#: bp-notifications/bp-notifications-template.php:899
 msgctxt "Notification screen action"
 msgid "Unread"
 msgstr ""
