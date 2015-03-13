@@ -448,13 +448,15 @@ function my_pre_save_post( $post_id ) {
       return $post_id;
   }
 
-  $group_page_title = $_POST['fields']['field_54d92845737a6']; // Field name on Groups Pages
+  $group_page_title = $_POST['fields']['field_54e265b4bbc92']; // Field name on Groups Pages
+  $group_page_group = $_POST['fields']['field_54e265dbbbc94']; // Field name on Groups Pages
 
   // Create a new post
   $post = array(
-      'post_status'  => 'publish',
-      'post_title'  => $group_page_title,
-      'post_type'  => 'groups-page',
+    'post_status'  => 'publish',
+    'post_title'  => $group_page_title,
+    'post_type'  => 'groups-page',
+    'post_parent' => $group_page_group
   );
 
   // insert the post
